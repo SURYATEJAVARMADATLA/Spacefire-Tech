@@ -1,485 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-	<meta charset="utf-8">
-
-	<title>Spacefire Tech</title>
-
-	<meta name="description" content="Description">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-
-	<link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
-
-	<link rel="stylesheet" href="assets/css/bootstrap-grid.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="preload" href="assets/fonts/source-sans-pro-v21-latin/source-sans-pro-v21-latin-regular.woff2" as="font"
-		type="font/woff2" crossorigin>
-	<link rel="preload" href="assets/fonts/source-sans-pro-v21-latin/source-sans-pro-v21-latin-700.woff2" as="font"
-		type="font/woff2" crossorigin>
-	<link rel="preload" href="assets/fonts/montserrat-v25-latin/montserrat-v25-latin-700.woff2" as="font"
-		type="font/woff2" crossorigin>
-	<link rel="preload" href="assets/fonts/montserrat-v25-latin/montserrat-v25-latin-600.woff2" as="font"
-		type="font/woff2" crossorigin>
-
-	<link rel="preload" href="assets/fonts/material-icons/material-icons.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="assets/fonts/material-icons/material-icons-outlined.woff2" as="font" type="font/woff2"
-		crossorigin>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080910">
+  <meta name="description" content="Spacefire builds approachable AI software for careers, content creation, business automation, and everyday productivity.">
+  <link rel="canonical" href="https://spacefiretech.com/">
+  <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="assets/spacefire-wordmark.png" as="image">
+  <link rel="stylesheet" href="assets/css/spacefire.css">
+  <title>Spacefire — Make room for your next big thing</title>
 </head>
-
 <body>
+  <div class="page-grain" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Spacefire home">
+      <img src="assets/spacefire-wordmark.png" alt="Spacefire" width="194" height="59">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#preview">Preview</a>
+      <a href="#approach">Our approach</a>
+      <a href="pricing.html">Plans</a>
+      <a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-	<main class="main">
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-mark"></span> Intelligence for the work ahead</p>
+        <h1 id="hero-title">Make room for<br>your <span class="gradient-text">next big thing.</span></h1>
+        <p class="hero-description">Less busywork. More forward motion. Spacefire creates approachable AI software that helps people and teams do their best work.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#ecosystem">Explore the ecosystem <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#preview">See a product preview <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-footnote"><span class="status-dot"></span> Built for people with somewhere to go</div>
+      </div>
 
-		<div class="main-inner">
+      <div class="hero-art" aria-label="A 3D-inspired orbit representing Spacefire’s AI product ecosystem">
+        <div class="scene-glow"></div>
+        <div class="scene-orbit orbit-one"></div>
+        <div class="scene-orbit orbit-two"></div>
+        <div class="scene-orbit orbit-three"></div>
+        <div class="orbit-spark spark-one"></div><div class="orbit-spark spark-two"></div><div class="orbit-spark spark-three"></div>
+        <div class="core-wrap">
+          <div class="core-halo"></div>
+          <div class="core">
+            <svg viewBox="0 0 100 100" role="img" aria-label="Spacefire mark">
+              <defs><linearGradient id="fire-gradient" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#715bff"/><stop offset=".58" stop-color="#4d8bff"/><stop offset="1" stop-color="#39d8ee"/></linearGradient></defs>
+              <path d="M52 8 27 53l17 16L52 8Z" fill="url(#fire-gradient)"/>
+              <path d="m58 27-8 50 24-25-16-25Z" fill="url(#fire-gradient)" opacity=".92"/>
+              <path d="M20 65 42 82l-9-27-13 10Z" fill="url(#fire-gradient)" opacity=".8"/>
+            </svg>
+          </div>
+        </div>
+        <div class="orbit-label label-career"><span class="label-icon">✳</span><span>Career intelligence</span></div>
+        <div class="orbit-label label-creator"><span class="label-icon">◈</span><span>Creator workflows</span></div>
+        <div class="orbit-label label-business"><span class="label-icon">⌘</span><span>Business systems</span></div>
+        <div class="float-panel panel-workflow">
+          <div class="panel-top"><span class="panel-dot"></span> YOUR NEXT MOVE <span class="panel-more">•••</span></div>
+          <div class="workflow-line"><span class="workflow-icon">01</span><span>Find your signal</span><span class="workflow-check">✓</span></div>
+          <div class="workflow-line"><span class="workflow-icon">02</span><span>Shape your story</span><span class="workflow-check">✓</span></div>
+          <div class="workflow-line is-active"><span class="workflow-icon">03</span><span>Move with intent</span><span class="workflow-arrow">↗</span></div>
+        </div>
+        <div class="float-chip chip-one"><span class="chip-orb"></span> Thoughtful by design</div>
+        <div class="float-chip chip-two">✦ &nbsp; One idea, many possibilities</div>
+        <div class="scene-caption">A connected ecosystem<br><span>built around real work</span></div>
+      </div>
+      <div class="hero-bottomline"><span>01 / A NEW KIND OF SOFTWARE COMPANY</span><a href="#ecosystem">SCROLL TO EXPLORE <span>↓</span></a><span>AVAILABLE EVERYWHERE</span></div>
+    </section>
 
-			<!-- Begin mobile main menu -->
-			<nav class="mmm">
-				<div class="mmm-content">
-					<ul class="mmm-list">
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="about-us.html">About us</a>
-						</li>
-						
-						<li>
-							<a href="tabs-and-accordions.html">Blogs & Resources</a>
-						</li>
-						
-						<li>
-							<a href="services.html">Services</a>
-						</li>
+    <section class="ticker" aria-label="Spacefire product areas">
+      <div class="ticker-track"><span>CAREER CLARITY</span><i>✳</i><span>CREATOR MOMENTUM</span><i>✳</i><span>SMARTER OPERATIONS</span><i>✳</i><span>EVERYDAY PRODUCTIVITY</span><i>✳</i><span>CAREER CLARITY</span><i>✳</i><span>CREATOR MOMENTUM</span><i>✳</i><span>SMARTER OPERATIONS</span><i>✳</i><span>EVERYDAY PRODUCTIVITY</span><i>✳</i></div>
+    </section>
 
-						<li>
-							<a href="contacts.html">Contacts</a>
-						</li>
+    <section class="ecosystem section-light" id="ecosystem" aria-labelledby="ecosystem-title">
+      <div class="section-shell">
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow eyebrow-dark"><span class="eyebrow-mark"></span> The Spacefire ecosystem</p>
+          <div class="intro-row"><h2 id="ecosystem-title">Small sparks.<br><span class="serif-italic">Bigger horizons.</span></h2><p>One connected vision for the moments that matter: finding your next role, making your next great video, or getting your day back.</p></div>
+        </div>
+        <div class="product-grid">
+          <a class="product-card product-career" href="products/career.html" data-reveal>
+            <div class="product-visual visual-resume"><div class="resume-sheet"><span class="sheet-kicker">YOUR STORY, SHARPENED</span><span class="sheet-title">A clearer<br>next chapter.</span><span class="sheet-rule"></span><span class="sheet-lines"></span></div><span class="visual-orbit"></span><span class="visual-number">01</span></div>
+            <div class="product-copy"><div class="product-meta"><span>CAREER</span><span class="card-arrow">↗</span></div><h3>Find work that fits you.</h3><p>Build a stronger story, discover better matches, and move through your job search with clarity.</p><span class="product-link">Explore career tools <b>→</b></span></div>
+          </a>
+          <a class="product-card product-interview" href="products/interview.html" data-reveal>
+            <div class="product-visual visual-interview"><div class="voice-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="interview-note">Practice, reflect,<br>show up ready.</span><span class="visual-number">02</span></div>
+            <div class="product-copy"><div class="product-meta"><span>INTERVIEW</span><span class="card-arrow">↗</span></div><h3>Walk in ready.</h3><p>Practice with a personal coach, refine your answers, and make room for your best thinking.</p><span class="product-link">Explore interview tools <b>→</b></span></div>
+          </a>
+          <a class="product-card product-creator" href="products/creator.html" data-reveal>
+            <div class="product-visual visual-creator"><div class="creator-stack"><span>IDEA</span><b>↘</b><span>STORY</span><b>↘</b><span>VIDEO</span></div><div class="creator-sun"></div><span class="visual-number">03</span></div>
+            <div class="product-copy"><div class="product-meta"><span>CREATOR STUDIO</span><span class="card-arrow">↗</span></div><h3>Make more of your ideas.</h3><p>Turn research and rough notes into thoughtful content workflows, ready for your creative touch.</p><span class="product-link">Explore creator tools <b>→</b></span></div>
+          </a>
+          <a class="product-card product-business" href="products/business.html" data-reveal>
+            <div class="product-visual visual-business"><div class="business-window"><div class="window-dots">● ● ●</div><div class="window-row wide"></div><div class="window-row"></div><div class="window-row short"></div><div class="window-spark">↗</div></div><span class="visual-number">04</span></div>
+            <div class="product-copy"><div class="product-meta"><span>BUSINESS</span><span class="card-arrow">↗</span></div><h3>Let the busywork go.</h3><p>Streamline repeatable operations, customer workflows, and the small tasks that slow teams down.</p><span class="product-link">Explore business tools <b>→</b></span></div>
+          </a>
+          <a class="product-card product-productivity" href="products/productivity.html" data-reveal>
+            <div class="product-visual visual-productivity"><div class="orbit-clock"><span></span><i></i><b></b></div><div class="productivity-type">TIME<br>BACK</div><span class="visual-number">05</span></div>
+            <div class="product-copy"><div class="product-meta"><span>PRODUCTIVITY</span><span class="card-arrow">↗</span></div><h3>Make your day work for you.</h3><p>Friendly, focused digital tools that help you move through your work with less friction.</p><span class="product-link">Explore productivity tools <b>→</b></span></div>
+          </a>
+        </div>
+        <div class="ecosystem-note" data-reveal><span class="note-icon">✦</span><p>One portfolio, many useful beginnings.<br><strong>New Spacefire products are always in motion.</strong></p><a href="#contact">Bring us an idea <span>↗</span></a></div>
+      </div>
+    </section>
 
-					</ul>
-				</div>
-			</nav>
-			<header class="header header-minimal">
-				<nav class="header-fixed">
-					<div class="container">
-						<div class="row flex-nowrap align-items-center justify-content-between">
-							<div class="col-auto header-fixed-col logo-wrapper">
-								<a href="index.html" class="logo" title="Spacefire Tech ">
-									<img src="assets/img/logo-ico.png" width="100" height="100"
-										alt="Spacefire Tech">
-								</a>
-							</div>
-							<div class="col-auto col-xl col-static header-fixed-col d-none d-xl-block">
-								<div class="row flex-nowrap align-items-center justify-content-end">
-									<div class="col header-fixed-col d-none d-xl-block col-static">
-										<!-- Begin main menu -->
-										<nav class="main-mnu">
-											<ul class="main-mnu-list">
-												<li>
-													<a href="index.html" data-title="Home">
-														<span>Home</span>
-													</a>
-												</li>
-												<li>
-													<a href="about-us.html" data-title="About us">
-														<span>About us</span>
-													</a>
-												</li>
-												
-												
-												<li>
-													<a href="tabs-and-accordions.html" data-title="Blogs & Resources">
-														<span>Blogs & Resources</span>
-													</a>
-												</li>
-												
-												<li>
-													<a href="services.html" data-title="Services">
-														<span>Services</span>
-													</a>
-												</li>
+    <section class="preview-section" id="preview" aria-labelledby="preview-title">
+      <div class="section-shell preview-layout">
+        <div class="preview-copy" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-mark"></span> A glimpse of what’s possible</p>
+          <h2 id="preview-title">From scattered<br>to <span class="gradient-text">in motion.</span></h2>
+          <p>Great software makes a complicated next step feel surprisingly simple. Explore a few directions we’re building toward.</p>
+          <div class="preview-tabs" role="tablist" aria-label="Choose a product preview">
+            <button class="preview-tab is-selected" role="tab" aria-selected="true" data-preview="career">Career</button>
+            <button class="preview-tab" role="tab" aria-selected="false" data-preview="creator">Creator</button>
+            <button class="preview-tab" role="tab" aria-selected="false" data-preview="business">Business</button>
+          </div>
+          <p class="preview-disclaimer">Illustrative product concept. Individual products and features are in development.</p>
+        </div>
+        <div class="preview-demo" data-reveal>
+          <div class="demo-window">
+            <div class="demo-window-head"><div class="window-dots"><i></i><i></i><i></i></div><span class="demo-breadcrumb">SPACEFIRE / <b id="demo-category">CAREER STUDIO</b></span><span class="demo-avatar">S</span></div>
+            <div class="demo-body">
+              <div class="demo-sidebar"><div class="sidebar-brand"><span>✦</span> SPACEFIRE</div><span class="sidebar-item active">▦ &nbsp; Overview</span><span class="sidebar-item">◈ &nbsp; Your workspace</span><span class="sidebar-item">⌁ &nbsp; Recent activity</span><span class="sidebar-bottom">◌ &nbsp; Settings</span></div>
+              <div class="demo-content"><p class="demo-label" id="demo-kicker">A BETTER NEXT MOVE STARTS HERE</p><h3 id="demo-heading">A clearer path<br>to your next role.</h3><p class="demo-subtitle" id="demo-subtitle">Bring your experience into focus and find opportunities that fit.</p>
+                <div class="demo-feature" id="demo-feature"><div class="feature-symbol">✳</div><div><strong id="demo-feature-title">Your story, made stronger</strong><span id="demo-feature-text">Turn the work you’ve done into a profile that gets noticed.</span></div><span class="feature-arrow">↗</span></div>
+                <div class="demo-progress"><div><span>YOUR WORKFLOW</span><span id="demo-progress-label">1 of 3 complete</span></div><div class="progress-rail"><span id="demo-progress-fill"></span></div></div>
+                <button class="demo-action" type="button" id="demo-action">Shape my profile <span>→</span></button>
+              </div>
+            </div>
+          </div>
+          <span class="demo-orbit demo-orbit-a"></span><span class="demo-orbit demo-orbit-b"></span>
+        </div>
+      </div>
+    </section>
 
-												<li>
-													<a href="contacts.html" data-title="Contacts">
-														<span>Contacts</span>
-													</a>
-												</li>
-											</ul>
-										</nav><!-- End main menu -->
-									</div>
-								</div>
-							</div>
-							<div class="col-auto d-block d-xl-none header-fixed-col">
-								<div class="main-mnu-btn">
-									<span class="bar bar-1"></span>
-									<span class="bar bar-2"></span>
-									<span class="bar bar-3"></span>
-									<span class="bar bar-4"></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</nav>
-			</header>
+    <section class="approach section-light" id="approach" aria-labelledby="approach-title">
+      <div class="section-shell">
+        <div class="approach-heading" data-reveal><p class="eyebrow eyebrow-dark"><span class="eyebrow-mark"></span> Our point of view</p><h2 id="approach-title">Useful first.<br><span class="serif-italic">Intelligent always.</span></h2><p>Technology should make you feel more capable, not more complicated. That belief shapes every product we build.</p></div>
+        <div class="principles">
+          <article class="principle" data-reveal><span class="principle-index">01</span><div class="principle-icon icon-person">◎</div><h3>Made for real people</h3><p>Clear experiences that meet you where you are and help you take the next step.</p></article>
+          <article class="principle" data-reveal><span class="principle-index">02</span><div class="principle-icon icon-spark">✳</div><h3>AI with a purpose</h3><p>Thoughtful intelligence, applied to the everyday challenges worth solving.</p></article>
+          <article class="principle" data-reveal><span class="principle-index">03</span><div class="principle-icon icon-loop">↗</div><h3>Always moving forward</h3><p>A growing portfolio that keeps getting more useful as the world changes.</p></article>
+        </div>
+      </div>
+    </section>
 
-			<div class="section-bgc intro">
-				<div class="intro-item intro-item-type-1" style="background-image: url('assets/img/intro-img1.jpg');">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<div class="intro-content" style="--margin-left: 4rem;">
-									<div class="section-heading shm-none">
-										<div class="section-subheading">Spacefire Tech 
-											</div>
-										<h1 style="color: rgb(255, 255, 255);">Empowering Your Future with Intelligent AI Solutions</h1>
-										<p class=" section-desc" style="color: rgb(159, 159, 159);">At Spacefire Tech, we build innovative AI-powered software and intelligent digital solutions that simplify work, automate everyday tasks, and accelerate business growth. From AI-powered career tools and interview preparation to content creation automation, business solutions, and productivity applications, we transform ideas into powerful technology. Our mission is to make advanced AI accessible, affordable, and easy to use for everyone.</p>
-									</div>
-									<div class="btn-group intro-btns">
-										<a href="about-us.html" class="btn btn-border btn-with-icon btn-small ripple">
-											<span style="color: rgb(159, 159, 159);">How We Can Help You</span>
-											<svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9">
-												<use xlink:href="assets/img/sprite.svg#arrow-right"></use>
-											</svg>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+    <section class="model-section" aria-labelledby="model-title">
+      <div class="section-shell model-layout">
+        <div class="model-copy" data-reveal><p class="eyebrow"><span class="eyebrow-mark"></span> Built to grow with you</p><h2 id="model-title">Good tools.<br><span class="gradient-text">Fair terms.</span></h2><p>Spacefire is a multi-product software company. Each product is designed to be accessible, scalable, and available through flexible subscriptions.</p><a class="button button-outline" href="#contact">Ask about early access <span>↗</span></a></div>
+        <div class="model-card" data-reveal><div class="model-card-top"><span>SPACEFIRE / MEMBERSHIP</span><span class="model-symbol">✦</span></div><div class="model-card-main"><span class="model-kicker">ONE ECOSYSTEM</span><h3>Choose the tool<br>that moves you.</h3><p>Subscribe to the products that make sense for your work, with monthly and annual options as each one launches.</p></div><div class="model-card-bottom"><span><i></i> Flexible by design</span><span>Product plans announced at launch</span></div></div>
+      </div>
+    </section>
 
-			<section class="section">
-				<div class="container">
-					<div class="row">
-						<header class="col-12">
-							<div class="section-heading heading-center">
-								<div class="section-subheading">Areas what we serv</div>
-								<h2>Our Services</h2>
-							</div>
-						</header>
-						<div class="col-lg-4 col-md-6 col-12 item">
-							<a href="#!" class="iitem item-style iitem-hover">
-								<div class="iitem-icon">
-									<i class="material-icons material-icons-outlined md-48">corporate_fare</i>
-								</div>
-								<div class="iitem-icon-bg">
-									<i class="material-icons material-icons-outlined">corporate_fare</i>
-								</div>
-								<h3 class="iitem-heading item-heading-large"> AI-Powered Software Solutions 	
-								</h3>
-								<div class="iitem-desc">We develop intelligent AI-powered applications designed to simplify everyday tasks, improve productivity, and solve real-world challenges. From career optimization and resume building to AI interview preparation, our innovative software helps individuals and professionals achieve more with less effort.</div>
-							</a>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 item">
-							<a href="#!" class="iitem item-style iitem-hover">
-								<div class="iitem-icon">
-									<i class="material-icons material-icons-outlined md-48">support_agent</i>
-								</div>
-								<div class="iitem-icon-bg">
-									<i class="material-icons material-icons-outlined">support_agent</i>
-								</div>
-								<h3 class="iitem-heading item-heading-large">AI Automation & Productivity
-								</h3>
-								<div class="iitem-desc">Transform the way you work with intelligent automation. Our AI solutions help content creators, influencers, startups, and businesses automate repetitive tasks, streamline workflows, simplify content creation, and maximize productivity through smart technology.
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4 col-md-12 col-12 item">
-							<a href="#!" class="iitem item-style iitem-hover">
-								<div class="iitem-icon">
-									<i class="material-icons material-icons-outlined md-48">cloud_download</i>
-								</div>
-								<div class="iitem-icon-bg">
-									<i class="material-icons material-icons-outlined">cloud_download</i>
-								</div>
-								<h3 class="iitem-heading item-heading-large">Custom Software & SaaS Development
-								</h3>
-								<div class="iitem-desc"> We build scalable, user-friendly, and innovative software solutions tailored to modern digital needs. From AI-powered platforms and subscription-based SaaS applications to intelligent business tools, we turn innovative ideas into powerful digital products designed for growth.</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-constellation" aria-hidden="true"><span></span><span></span><span></span><span></span><i></i></div>
+      <div class="section-shell contact-content" data-reveal><p class="eyebrow"><span class="eyebrow-mark"></span> The future has room for you</p><h2 id="contact-title">Have a big idea?<br><span class="serif-italic">Let’s give it space.</span></h2><p>Tell us what you’re building, what you’re trying to solve, or which Spacefire product you want to see next.</p><a class="button button-primary button-contact" href="mailto:Ranga@spacefiretech.com?subject=Let%E2%80%99s%20talk%20Spacefire">Start a conversation <span>↗</span></a><span class="contact-email">Or email <a href="mailto:Ranga@spacefiretech.com">Ranga@spacefiretech.com</a></span></div>
+    </section>
+  </main>
 
-			<section class="section section-bgc">
-				<div class="container">
-					<div class="row litems">
-						<header class="col-12">
-							<div class="section-heading heading-center">
-								<div class="section-subheading">some reasons</div>
-								<h2>Why Choose Spacefire Tech?</h2>
-							</div>
-						</header>
-						<div class="col-lg-4 col-md-6 col-12 litem">
-							<div class="ini">
-								<div class="ini-count">01</div>
-								<div class="ini-info">
-									<h3 class="ini-heading item-heading-large">AI-Powered Innovation</h3>
-									<div class="ini-desc">
-										<p>We leverage the power of artificial intelligence and modern technologies to develop intelligent software solutions that simplify tasks, automate workflows, and solve real-world challenges.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 litem">
-							<div class="ini">
-								<div class="ini-count">02</div>
-								<div class="ini-info">
-									<h3 class="ini-heading item-heading-large">Smart & Easy-to-Use  <br> Products</h3>
-									<div class="ini-desc">
-										<p>Our applications are designed with simplicity in mind. We make advanced AI technology accessible through intuitive, user-friendly platforms that anyone can use.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 litem">
-							<div class="ini">
-								<div class="ini-count">03</div>
-								<div class="ini-info">
-									<h3 class="ini-heading item-heading-large">Affordable Subscription Plans</h3>
-									<div class="ini-desc">
-										<p>Access powerful AI tools without expensive investments. Our flexible monthly and annual subscription plans make innovative technology accessible to individuals, creators, startups, and businesses.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 litem">
-							<div class="ini">
-								<div class="ini-count">04</div>
-								<div class="ini-info">
-									<h3 class="ini-heading item-heading-large">Multiple Solutions, One Platform
-									</h3>
-									<div class="ini-desc">
-										<p>From AI career tools and interview preparation to content creation, business automation, and productivity applications, we bring multiple intelligent solutions together under one technology brand.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 litem">
-							<div class="ini">
-								<div class="ini-count">05</div>
-								<div class="ini-info">
-									<h3 class="ini-heading item-heading-large">Continuous Innovation </h3>
-									<div class="ini-desc">
-										<p>Technology never stands still, and neither do we. We continuously improve our existing applications, explore emerging technologies, and introduce new AI-powered products to meet evolving customer needs.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 litem">
-							<div class="ini">
-								<div class="ini-count">06</div>
-								<div class="ini-info">
-									<h3 class="ini-heading item-heading-large"> Customer-Focused Approach</h3>
-									<div class="ini-desc">
-										<p>Your success drives our innovation. We focus on delivering practical, reliable, and valuable software experiences that help our customers save time, improve efficiency, and achieve more.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+  <footer class="site-footer"><div class="section-shell footer-main"><a class="brand footer-brand" href="#top"><img src="assets/spacefire-wordmark.png" alt="Spacefire" width="194" height="59"></a><p>AI software for the work, ideas,<br>and possibilities ahead.</p><div class="footer-links"><a href="#ecosystem">Ecosystem</a><a href="#preview">Preview</a><a href="pricing.html">Plans</a><a href="#approach">Our approach</a><a href="mailto:Ranga@spacefiretech.com">Contact</a></div></div><div class="section-shell footer-bottom"><span>© <span id="current-year">2026</span> Spacefire Technologies</span><span>Made for what’s next <i>✦</i></span><a href="#top">Back to top ↑</a></div></footer>
 
-			<section class="section section-without-padding-bottom">
-				<div class="container">
-					<div class="row items spincrement-container">
-						<div class="col-xl-3 col-md-6 col-12 item">
-							<div class="counter-min">
-								<div class="counter-min-block">
-									<div class="counter-min-ico">
-										<i class="material-icons material-icons-outlined md-36">history</i>
-									</div>
-									<div class="counter-min-numb spincrement" data-from="0" data-to="3">0</div>
-								</div>
-								<div class="counter-min-info">
-									<h4 class="counter-min-heading">Years Of Experience</h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-md-6 col-12 item">
-							<div class="counter-min">
-								<div class="counter-min-block">
-									<div class="counter-min-ico">
-										<i class="material-icons material-icons-outlined md-36">chat</i>
-									</div>
-									<div class="counter-min-numb spincrement" data-from="0" data-to="20">0</div>
-								</div>
-								<div class="counter-min-info">
-									<h4 class="counter-min-heading">Consultans</h4>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-xl-3 col-md-6 col-12 item">
-							<div class="counter-min">
-								<div class="counter-min-block">
-									<div class="counter-min-ico">
-										<i class="material-icons material-icons-outlined md-36">phonelink_setup</i>
-									</div>
-									<div class="counter-min-numb"><span class="spincrement" data-from="0"
-											data-to="2">0</span>0</div>
-								</div>
-								<div class="counter-min-info">
-									<h4 class="counter-min-heading">Clients</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="section">
-				<div class="container">
-					<div class="row">
-						<header class="col-12">
-							<div class="section-heading heading-center">
-								<div class="section-subheading">Reviews from our clients</div>
-								<h2>What People Say</h2>
-							</div>
-						</header>
-						<div class="col-lg-4 col-md-6 col-12 item">
-							<div class="reviews-item item-style">
-								<div class="reviews-item-header">
-									<div class="reviews-item-img">
-										<img data-src="" class="img-cover lazy"
-											src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-											alt="">
-									</div>
-									<div class="reviews-item-info">
-										<h4 class="reviews-item-name item-heading">Catherine Williams</h4>
-										<div class="reviews-item-position">Regular client</div>
-									</div>
-								</div>
-								<div class="reviews-item-text">
-									<p>Spacefire Tech offers a high caliber of resources skilled in Microsoft Azure.NET,
-										mobile
-										and Quality Assurance. They became our true business partners over the past
-										three
-										years.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12 item">
-							<div class="reviews-item item-style">
-								<div class="reviews-item-header">
-									<div class="reviews-item-img">
-										<img data-src="" class="img-cover lazy"
-											src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-											alt="">
-									</div>
-									<div class="reviews-item-info">
-										<h4 class="reviews-item-name item-heading">Rupert Wood</h4>
-										<div class="reviews-item-position">Regular client</div>
-									</div>
-								</div>
-								<div class="reviews-item-text">
-									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
-										consequuntur
-										sequi
-										eos beatae deleniti culpa cupiditate rerum. Similique, blanditiis rem
-										perspiciatis
-										fugiat voluptatem quas officiis ducimus reprehenderit.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-12 col-12 item">
-							<div class="reviews-item item-style">
-								<div class="reviews-item-header">
-									<div class="reviews-item-img">
-										<img data-src="" class="img-cover lazy"
-											src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-											alt="">
-									</div>
-									<div class="reviews-item-info">
-										<h4 class="reviews-item-name item-heading">Mrunal </h4>
-										<div class="reviews-item-position">Regular client</div>
-									</div>
-								</div>
-								<div class="reviews-item-text">
-									<p>We sincerely hope that each and every user entering our website will find
-										exactly.
-										With advanced features of activating account and new login widgets, you will
-										definitely have a great experience of using our web page.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			
-
-		</div>
-
-
-		<!-- Begin footer -->
-		<footer class="footer footer-minimal">
-			<div class="footer-main">
-				<div class="container">
-					<div class="row items align-items-center">
-						<div class="col-lg-3 col-md-4 col-12 item">
-							<div class="widget-brand-info">
-								<div class="widget-brand-info-main">
-									<a href="index.html" class="logo" title="Spacefire Tech ">
-										<img data-src="assets/img/logo-ico.png" class="lazy" width="136" height="36"
-											src="assets/img/logo-ico.png" alt="Spacefire Tech" data-loaded="true"
-											style="opacity: 1;">
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md item">
-							<div class="footer-item">
-								<nav class="footer-nav">
-									<ul class="footer-mnu footer-mnu-line">
-										
-										<li>
-											<a href="index.html">Home</a>
-										</li>
-										<li>
-											<a href="about-us.html">About us</a>
-										</li>
-										
-										
-										<li>
-											<a href="tabs-and-accordions.html">Blogs & Resources</a>
-										</li>
-										
-										<li>
-											<a href="services.html">Services</a>
-										</li>
-
-										<li>
-											<a href="contacts.html">Contacts</a>
-										</li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</footer><!-- End footer -->
-
-	</main><!-- End main -->
-
-	<script src="assets/libs/jquery/jquery.min.js"></script>
-	<script src="assets/libs/lozad/lozad.min.js"></script>
-	<script src="assets/libs/device/device.js"></script>
-	<script src="assets/libs/spincrement/jquery.spincrement.min.js"></script>
-	<script src="assets/libs/pristine/pristine.min.js"></script>
-	<script src="assets/js/custom.js"></script>
-	<script src="assets/js/forms.js"></script>
-
+  <script src="assets/js/spacefire.js" defer></script>
 </body>
-
 </html>
